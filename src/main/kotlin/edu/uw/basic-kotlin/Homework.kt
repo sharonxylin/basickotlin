@@ -35,5 +35,13 @@ fun mathOp(int1: Int, int2: Int, func: (Int, Int)-> Int): Int{
 }
 
 // write a class "Person" with first name, last name and age
+class Person(var firstName: String, var lastName: String, var age: Int) {
+  init {
+    val debugString = "[Person firstName:$firstName lastName:$lastName age:$age]"
+  }
+}
 
 // write a class "Money" with amount and currency, and define a convert() method and the "+" operator
+class Money(var amount: Int, var currency: String){
+
+}
