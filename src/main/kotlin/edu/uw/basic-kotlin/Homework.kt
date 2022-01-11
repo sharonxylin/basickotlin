@@ -16,7 +16,7 @@ whenFn (x: Any): String {
   1 -> return "one"
   in 2..10 -> return "low number"
   !in 2..10 -> return "a number"
-  else -> return "I don't understand"
+  else -> { return "I don't understand" }
 }
     
 // write an "add" function that takes two Ints, returns an Int, and adds the values
@@ -31,7 +31,7 @@ fun sub(int1: Int, int2: Int): Int {
 
 // write a "mathOp" function that takes two Ints and a function (that takes two Ints and returns an Int), returns an Int, and applies the passed-in-function to the arguments
 fun mathOp(int1: Int, int2: Int, func: (Int, Int)-> Int): Int{
-    func(int1, int2)
+    return func(int1, int2)
 }
 
 // write a class "Person" with first name, last name and age
